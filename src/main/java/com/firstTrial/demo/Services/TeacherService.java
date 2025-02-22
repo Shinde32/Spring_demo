@@ -34,7 +34,7 @@ public class TeacherService {
         logger.info("Attempting to add a new teacher");
         try {
             Teacher savedTeacher = teacherRepository.save(teacher);
-            logger.info("Teacher added successfully with ID: {}", savedTeacher);
+            logger.info("Teacher added successfully");
             return savedTeacher;
         } catch (Exception e) {
             logger.error("Error adding teacher: {}", e.getMessage(), e);

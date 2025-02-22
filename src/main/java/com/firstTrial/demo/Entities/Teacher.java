@@ -16,7 +16,7 @@ public class Teacher {
     @Id
     @GeneratedValue(strategy = GenerationType.UUID)
     private UUID id;
-
+    @Column(nullable = false,length  = 10)
     private String firstName;
 
     @OneToOne(cascade = CascadeType.ALL, fetch = FetchType.LAZY)

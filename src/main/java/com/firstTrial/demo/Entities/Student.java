@@ -10,7 +10,8 @@ public class Student {
     @Id
     @GeneratedValue(strategy = GenerationType.UUID)
     public UUID id;
+    
     public String name;
-    @Column(nullable = false)
+    @Column(nullable = false, unique = true)
     public String phoneNumber;
 }

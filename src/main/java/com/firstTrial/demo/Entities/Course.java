@@ -12,6 +12,7 @@ public class Course {
     @Id
     @GeneratedValue(strategy = GenerationType.UUID)
     public UUID id;
+    @Column(nullable = false,unique  = true)
     public String name;
 
 }
